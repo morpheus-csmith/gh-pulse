@@ -1,0 +1,38 @@
+{
+  "name": "gh-pulse",
+  "version": "1.0.0",
+  "description": "CLI tool to get a quick health check of any GitHub repository - activity, issues, PRs, and contributor stats",
+  "main": "src/index.js",
+  "bin": {
+    "gh-pulse": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node tests/test.js",
+    "lint": "eslint src/"
+  },
+  "keywords": ["github", "cli", "repository", "health-check", "devtools", "open-source"],
+  "author": "morpheus-csmith",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "ora": "^5.4.1",
+    "boxen": "^5.1.2",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morpheus-csmith/gh-pulse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/morpheus-csmith/gh-pulse/issues"
+  },
+  "homepage": "https://github.com/morpheus-csmith/gh-pulse#readme"
+}
